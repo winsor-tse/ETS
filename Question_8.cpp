@@ -4,6 +4,7 @@ https://www.youtube.com/watch?v=tqP_YbhuNaQ
 
 */
 // C++ program to print all permutations using
+// https://www.geeksforgeeks.org/heaps-algorithm-for-generating-permutations/
 // Heap's algorithm
 #include <bits/stdc++.h>
 using namespace std;

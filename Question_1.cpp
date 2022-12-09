@@ -124,66 +124,6 @@ void q7(){
     }
 }
 
-
-class Shape {
-  public:
-    // Virtual method to draw the shape
-    virtual void draw() = 0;
-
-    // Virtual method to get the area of the shape
-    virtual float getArea() = 0;
-};
-
-class Circle : public Shape {
-  private:
-    // Private member variable to store the radius of the circle
-    float radius;
-
-  public:
-    // Constructor to initialize the radius of the circle
-    Circle(float radius) : radius(radius) {}
-
-    // Method to draw the circle
-    void draw() override;
-
-    // Method to get the area of the circle
-    float getArea() override;
-};
-
-class Rectangle : public Shape {
-  private:
-    // Private member variables to store the length and width of the rectangle
-    float length, width;
-
-  public:
-    // Constructor to initialize the length and width of the rectangle
-    Rectangle(float length, float width) : length(length), width(width) {}
-
-    // Method to draw the rectangle
-    void draw() override;
-
-    // Method to get the area of the rectangle
-    float getArea() override;
-};
-
-class Triangle : public Shape {
-  private:
-    // Private member variables to store the sides of the triangle
-    float side1, side2, side3;
-
-  public:
-    // Constructor to initialize the sides of the triangle
-    Triangle(float side1, float side2, float side3) : side1(side1), side2(side2), side3(side3) {}
-
-    // Method to draw the triangle
-    void draw() override;
-
-    // Method to get the area of the triangle
-    float getArea() override;
-};
-
-
-
 int main(){
     //questions 1 input i = 25, value = 17.4495
     q_1(25, 17.4495);
